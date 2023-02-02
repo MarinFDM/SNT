@@ -54,10 +54,8 @@ void draw() {
     ellipse(674, ydroite, tailledroite, 30);       // petale droite
   }
   
- 
-    
-  
-  
+  soleil();
+ linesoleil(); 
 }
 
 
@@ -77,5 +75,22 @@ void dessineFleur() {
   fill(#FFFC33);
   stroke(#FFFC33);
   circle(625, 250, 130);   //centre plante
+  
+  
+  void soleil() {
+  fill(#F7E71A);
+  stroke(#F7E71A);
+  circle(1300,0,500);
+}
+
+
+
+void linesoleil() {
+  strokeWeight(12);
+  line(1100,25,880,100);
+  line(1100,120,920,215);
+  line(1190,150,1025,325);
+  line(1290,200,1200,400);
+  strokeWeight(1);
 }
 
