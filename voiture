@@ -1,0 +1,35 @@
+int i=10;
+void setup() {
+  size(1300,1000); //taille de l ecran
+  frameRate(30); //vitesse de l animation
+ 
+}
+
+
+void draw() {
+     background(#e8e3da); //couleur du fond
+     voiture(100,height-10);
+     i=i+10;
+     println(i);
+}
+
+
+
+void voiture(int x1, int y1) {
+  fill(#FF0000);         //couleur voiture
+  stroke(#FF0000);       //couleur voiture
+  line( x1+350, 500, 650, 500);
+  arc( x1+450, 500, 190, 100, -PI, 0); //cercle voiture
+    
+  fill(#000000); //couleur roue
+  stroke(#000000); //couelur roue
+  circle( x1+400, 500, 20); //roue 1
+  circle( x1+500, 500, 20); //roue 2
+ 
+  fill(#e8e3da); //couleur fenetre 
+  stroke(#e8e3da); //couelur fenetre
+  rect( x1+460, 460, 30, 30, 28); // fenetre
+}
+
+
+Louispresles@gmail.com
