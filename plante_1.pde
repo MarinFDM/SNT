@@ -78,7 +78,7 @@ void dessineFleur() {
   
   
   void soleil() {
-  fill(#F7E71A);
+  fill(#F7E71A);       //soleil
   stroke(#F7E71A);
   circle(1300,0,500);
 }
@@ -88,7 +88,7 @@ void dessineFleur() {
 void linesoleil() {
   strokeWeight(12);
   line(1100,25,880,100);
-  line(1100,120,920,215);
+  line(1100,120,920,215);    //rayon du soleil
   line(1190,150,1025,325);
   line(1290,200,1200,400);
   strokeWeight(1);
